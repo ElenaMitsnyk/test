@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ElenaMitsnyk/test/issues"
   },
-  "homepage": "https://github.com/ElenaMitsnyk/test#readme"
+  "homepage": "https://github.com/ElenaMitsnyk/test#readme",
+  "dependencies": {
+    "notiflix": "^3.2.6"
+  }
 }

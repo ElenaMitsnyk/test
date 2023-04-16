@@ -141,11 +141,11 @@
 // 
 
 // 2
-{/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 $(window).on("load", function() {
     $(".loader_inner").fadeOut();
     $(".loader").delay(400).fadeOut("slow");
-  }); */}
+  }); 
 
 // 3
 // const refs = {
@@ -195,23 +195,23 @@ $(window).on("load", function() {
 
 // 
 
-// 4
-document.addEventListener('DOMContentLoaded', () => {
+// // 4
+// document.addEventListener('DOMContentLoaded', () => {
 
-    const mediaFiles = document.querySelectorAll('img, video');
-    let i = 0
+//     const mediaFiles = document.querySelectorAll('img, video');
+//     let i = 0
 
-    Array.from(mediaFiles).forEach((file, index) => {
-        file.onload = () => {
-            i++
+//     Array.from(mediaFiles).forEach((file, index) => {
+//         file.onload = () => {
+//             i++
 
-            percents.innerHTML = ((i * 100) / mediaFiles.length).toFixed(1)
+//             percents.innerHTML = ((i * 100) / mediaFiles.length).toFixed(1)
 
-            if(i === mediaFiles.length) {
-                preloader.classList.add('preloader--hide')
-                percents.innerHTML = 100
-            }
-        }
-    })
+//             if(i === mediaFiles.length) {
+//                 preloader.classList.add('preloader--hide')
+//                 percents.innerHTML = 100
+//             }
+//         }
+//     })
 
-})
+// })

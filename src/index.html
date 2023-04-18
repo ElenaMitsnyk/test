@@ -129,10 +129,27 @@ autocomplete="off"
 <!-- </div> -->
 <!-- /#preloader.preloader -->
 
- 
+<template>
+  <div>
+<img :onerror="imageLoadOnError" :src="preview_url" alt="Превью" class="preview">
+  </div>
+</template>
+
+<script>
+  import defaultImage from 'https://i.pinimg.com/564x/d7/ee/a0/d7eea028d59c5c8525798c7da6fd87c8.jpg';
+  export default {
+   methods: {
+     imageLoadOnError(e){
+       e.target.src = defaultImage;
+     }
+   }
+
+  }
+</script>
+
 <main>
-<img src="https://i.pinimg.com/564x/d7/ee/a0/d7eea028d59c5c8525798c7da6fd87c8.jpg" alt="" class="plug">
-<img src="https://www.rochester.edu/newscenter/wp-content/uploads/2018/07/fea-nothing.jpg" alt="" class="plug">
+<img src="https://i.pinimg.com/564x/d7/ee/a0/d7eea028d59c5c8525798c7da6fd" alt="" class="plug">
+<img src="https://www.rochester.edu/newscenter/wp-content/uploads/2018/07/fea-no" alt="" class="plug">
 <img src="https://i.pinimg.com/564x/57/56/98/575698328a8d30c23b690c19b2cc9744.jpg" alt="" class="plug">
 
 <img src="https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/718/19/718-19-101P/That-s-All-Folks-The-Poster-Kid-Poster.jpg" alt="" class="plug">
